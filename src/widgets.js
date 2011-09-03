@@ -765,8 +765,8 @@ angularWidget('select', function(element){
           }
         }
         if (isDefined(value) && model.get() !== value) {
-          onChange(scope);
           model.set(value);
+          onChange(scope);
         }
         scope.$tryEval(function(){
           scope.$root.$eval();
